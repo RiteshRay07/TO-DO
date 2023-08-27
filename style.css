@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(112, 187, 214);
+  padding: 10px;
+}
+.todo-app {
+  width: 100%;
+  max-width: 540px;
+  background: white;
+  margin: 100px auto 20px;
+  padding: 40px 30px 20px;
+  border-radius: 10px;
+}
+.todo-app h2 {
+  color: #002765;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.todo-app h2 img {
+  width: 30px;
+  margin-left: 10px;
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #edeef0;
+  border-radius: 30px;
+  padding-left: 20px;
+  margin-bottom: 25px;
+  border: 2.5px solid #ff5945;
+}
+input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #298fb4;
+  padding: 10px;
+
+  font-weight: 17px;
+}
+button {
+  border: none;
+  outline: none;
+  padding: 16px 50px 16px 50px;
+  background: #ff5945;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 40px;
+}
+
+ul li {
+  list-style: none;
+  font-size: 17px;
+  margin-top: 15px;
+  padding: 12px 8px 12px 50px;
+  user-select: none;
+  cursor: pointer;
+  color: #298fb4;
+
+  border-radius: 30px;
+  background: #edeef0;
+  position: relative;
+}
+ul li::before {
+  content: "";
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 50px;
+  background-image: url(img/unchecked.png);
+  background-size: cover;
+  background-position: center;
+
+  top: 10.5px;
+  left: 8px;
+}
+ul li.checked {
+  color: #ff5945;
+  text-decoration: line-through;
+}
+ul li.checked::before {
+  background-image: url(img/checked.png);
+}
+ul li span {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  color: #555;
+  line-height: 40px;
+  text-align: center;
+}
+ul li span:hover {
+  background: #ff5945;
+  border-radius: 50%;
+}
+
+/* CopyRight */
+
+#copyright {
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 7px;
+  padding: 4px;
+  font-size: 10px;
+  min-width: 100px;
+  width: 175px;
+  box-shadow: rgba(100, 100, 111, 0.8) 0px 7px 9px 0px;
+  border-radius: 5px;
+  color:  #ff5945;
+  text-align: center;
+}
+#copyright a {
+  font-weight: bold;
+  color:  #ff5945;
+}
